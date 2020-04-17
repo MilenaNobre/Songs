@@ -4,16 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/trans_clarinho">
+    android:background="@android:color/black">
 
-
-    <Button
-        android:id="@+id/button5"
+    <TextView
+        android:id="@+id/id_text_busca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/pesquisa_fragment"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Id_pesquisa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Id_pesquisa"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_pesquisa"
+        android:ems="10"
+        android:hint="Artistas, faixas, podcasts..."
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_View_pesquisa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imagem_pesquisa"
+        android:layout_width="42dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/ic_search_menu"
+        tools:layout_editor_absoluteX="132dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_View_pesquisa"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/recycler_pesquisa"
+        android:contextClickable="false"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Id_pesquisa" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
