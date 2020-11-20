@@ -2,7 +2,7 @@
 <p align="center"> SEU APP DE MÚSICAS </p>
 <p align="center"> Status do Projeto: Concluído :heavy_check_mark:</>
 <div align="center">   
-   <img width="407"  alt="Logo" src="https://user-images.githubusercontent.com/48803004/84547437-ecdcde80-acd9-11ea-97f6-2b42ae3862a8.png">
+   <img width="200"  alt="Logo" src="https://user-images.githubusercontent.com/48803004/84547437-ecdcde80-acd9-11ea-97f6-2b42ae3862a8.png">
 </div>
 
 [![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23)
